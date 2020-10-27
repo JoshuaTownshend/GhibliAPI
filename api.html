@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head><meta charset="utf-8">
+<title>Ghibli App</title>
+<link rel="icon" href="download.jpg">
+<link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+<link href="api.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+</head>
+<html>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/index.html">vnt</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/kanji1.3.html">Kanji</a></li>
+      <li><a href="/fizzbuzz/fizzbuzz.html">Fizzbuzz</a></li>
+      <li class="active"><a href="/api.html">Ghibli</a></li>
+      <li><a href="#"><i class="fa fa-wrench"></i> TBA</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div id="wrapper">
+  <div id="main">
+<div id="header">
+  <h1>Ghibli chooser</h1>
+  <p>Choose a ghibli movie:</p></div>
+  <select id="dropdown">
+  </select>
+  <div class="card">
+    <h2 id="title"></h2>
+    <p id="desc"></p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Release Date</th>
+          <th>Director</th>
+          <th>Producer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="release"></td>
+          <td id="director"></td>
+          <td id="producer"></td>
+        </tr>
+        </tbody>
+      </table>
+      <button id="random" class="btn btn-primary"><i class="fas fa-question"></i> Random Movie</button></div>
+      <p>This page uses the <a href="https://ghibliapi.herokuapp.com/">Ghibli API</a></p>
+  </div>
+
+  </div>
+</div>
+    <script src="api.js"></script>
+  </body>
+</html>
